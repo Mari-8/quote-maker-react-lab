@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import QuoteForm from './components/QuoteForm';
+import Quotes from './containers/Quotes'
 
 class App extends Component {
   render() {
@@ -8,14 +10,16 @@ class App extends Component {
           <h1>Quote Maker</h1>
         </div>
         <hr />
-        {/*
-          TODO:
-
-          Render QuoteForm and Quotes Components
-         */}
+        <QuoteForm />
+        <Quotes /> 
       </div>
     );
   }
 }
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addQuote: formData => dispatch({ type: 'ADD_QUOTE', payload: formData})
+//   }
+//}
 
 export default App;
